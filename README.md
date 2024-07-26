@@ -30,5 +30,5 @@ Follow these steps to deploy the EKS cluster:
 Start by cloning the repository to your local machine:
 
 ```bash
-git clone https://github.com/lakshmi_thungala/terraform-cloud.git
+git clone https://github.com/lakshmi-Thungala/EKS-Deployment.git
 cd terraform-cloud

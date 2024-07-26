@@ -1,5 +1,5 @@
 resource "aws_eks_cluster" "eks" {
-  name = "ed-eks-01"              # Name of the EKS cluster
+  name = "my-eks-01"              # Name of the EKS cluster
   version = "1.22"                # Kubernetes version for the cluster
   role_arn = aws_iam_role.master.arn  # ARN of the IAM role that EKS uses to create AWS resources
 

@@ -7,7 +7,7 @@ resource "aws_eks_node_group" "frontend" {
   instance_types  = ["t3.medium"]               # Instance type for the nodes
 
   remote_access {
-    ec2_ssh_key = "ed-office"                   # SSH key name to access the nodes
+    ec2_ssh_key = "lucky_eks"                   # SSH key name to access the nodes
     source_security_group_ids = [aws_security_group.node.id]  # Security group for SSH access
   } 
 
@@ -48,7 +48,7 @@ resource "aws_eks_node_group" "backend" {
   instance_types  = ["t3.medium"]               # Instance type for the nodes
 
   remote_access {
-    ec2_ssh_key = "ed-office"                   # SSH key name to access the nodes
+    ec2_ssh_key = "lucky_eks"                   # SSH key name to access the nodes
     source_security_group_ids = [aws_security_group.node.id]  # Security group for SSH access
   } 
 

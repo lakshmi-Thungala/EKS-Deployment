@@ -129,3 +129,4 @@ resource "aws_iam_instance_profile" "worker" {
   role       = aws_iam_role.worker.name
   # Creates an IAM instance profile for the worker nodes, associating it with the worker role
 }
+

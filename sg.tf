@@ -1,5 +1,5 @@
 resource "aws_security_group" "node" {
-  name        = "ed-eks-node-sg"            # Name of the security group
+  name        = "my-eks-node-sg"            # Name of the security group
   description = "Allow ssh inbound traffic" # Description of the security group
   vpc_id      = aws_vpc.vpc.id              # VPC in which the security group will be created
 

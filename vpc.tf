@@ -77,3 +77,4 @@ resource "aws_route" "pub-rt" {
   destination_cidr_block = "0.0.0.0/0"          # Route for all traffic
   gateway_id = aws_internet_gateway.igw.id      # Internet gateway for public subnets
 }
+

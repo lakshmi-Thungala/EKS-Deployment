@@ -18,3 +18,4 @@ resource "aws_security_group" "node" {
     cidr_blocks = ["0.0.0.0/0"]             # IP range allowed for outbound traffic (open to the public)
   }
 }
+

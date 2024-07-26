@@ -125,7 +125,7 @@ resource "aws_iam_role_policy_attachment" "autoscaler" {
 
 resource "aws_iam_instance_profile" "worker" {
   depends_on = [aws_iam_role.worker]
-  name       = "ed-eks-worker-profile"  # Name of the IAM instance profile for worker nodes
+  name       = "my-eks-worker-profile"  # Name of the IAM instance profile for worker nodes
   role       = aws_iam_role.worker.name
   # Creates an IAM instance profile for the worker nodes, associating it with the worker role
 }

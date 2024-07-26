@@ -1,5 +1,5 @@
 resource "aws_iam_role" "master" {
-  name = "ed-eks-master"  # Name of the IAM role for EKS master
+  name = "my-eks-master"  # Name of the IAM role for EKS master
 
   assume_role_policy = <<POLICY
 {
@@ -37,7 +37,7 @@ resource "aws_iam_role_policy_attachment" "AmazonEKSVPCResourceController" {
 }
 
 resource "aws_iam_role" "worker" {
-  name = "ed-eks-worker"  # Name of the IAM role for EKS worker nodes
+  name = "my-eks-worker"  # Name of the IAM role for EKS worker nodes
 
   assume_role_policy = <<POLICY
 {
@@ -57,7 +57,7 @@ POLICY
 }
 
 resource "aws_iam_policy" "autoscaler" {
-  name   = "ed-eks-autoscaler-policy"  # Name of the IAM policy for autoscaling
+  name   = "my-eks-autoscaler-policy"  # Name of the IAM policy for autoscaling
   policy = <<EOF
 {
   "Version": "2012-10-17",

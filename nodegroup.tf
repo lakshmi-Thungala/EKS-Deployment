@@ -12,7 +12,7 @@ resource "aws_eks_node_group" "frontend" {
   } 
 
   taint {
-    key    = "frontend"                         # Key for the taint
+    key    = "frontend"                         # Key for the taint(if taint is not supporting then use replace)
     value  = "yes"                              # Value for the taint
     effect = "NO_SCHEDULE"                      # Effect of the taint, prevents scheduling non-tolerating pods
   }
